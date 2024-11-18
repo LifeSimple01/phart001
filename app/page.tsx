@@ -1,7 +1,8 @@
-import Image from "next/image";
-
+import Image from 'next/image'
+ 
 export default function Home(): JSX.Element {
   return (
+    
     <div className="bg-[#987185] font-sans min-h-screen">
       <div className="flex justify-between items-center p-4 bg-[#423736]">
         <div className="text-[#D6AA9F] font-bold text-lg">
@@ -29,8 +30,10 @@ export default function Home(): JSX.Element {
       <div className="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 bg-[#D6AA9F]">
         <div className="bg-[#E9D5B7] p-6 rounded-lg">
           <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">MY PROFILE</h2>
-          <img
+          <Image
             src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672cdcc33c0e6.png"
+            width={500}
+            height={500}
             alt="Profile Picture"
             className="w-full max-w-[200px] rounded-lg mb-4"
           />

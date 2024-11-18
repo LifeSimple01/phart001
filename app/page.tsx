@@ -9,7 +9,7 @@ export default function Home(): JSX.Element {
           <a href="#">MY WEBSITE</a>
         </div>
         <ul className="flex space-x-6">
-        <li>
+          <li>
             <a className="text-[#D6AA9F]">
               CLICK!!!
             </a>
@@ -62,7 +62,18 @@ export default function Home(): JSX.Element {
         <div className="bg-[#E9D5B7] p-6 rounded-lg">
           <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">ABOUT ME</h2>
           <p className="text-[#1a1a1a]">
-            หวัดดีค้าบบบบบบบบ อยู่จนจะจบม.6เเล้วค้าบบบบบบไม่รู้จะเขียนไรดีค้าบบบบบ
+            <a>CLICK!!!</a><br />
+            <a>++++++++++++++++++++++++++++++++++++++++++++++++++</a><br />
+            <a href="https://www.facebook.com/yarnnaphart.chamnongsooth.7">
+              FACEBOOK
+            </a>
+            <br />
+            <a href="https://www.instagram.com/life_simple001/">
+              INSTAGRAM
+            </a>
+            <br />
+            <a>++++++++++++++++++++++++++++++++++++++++++++++++++</a><br />
+            สวัสดีครับ
           </p>
         </div>
         <div className="bg-[#E9D5B7] p-6 rounded-lg">
@@ -76,7 +87,9 @@ export default function Home(): JSX.Element {
                 alt="Sand Block"
                 className="w-full mb-2"
               />
-              SAND BLOCK
+              <a href="https://fb.watch/vX4_TQIgxM/">
+              SANDBLOCK
+            </a>
             </div>
             <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
               <Image
@@ -86,7 +99,9 @@ export default function Home(): JSX.Element {
                 alt="GubGuru"
                 className="w-full mb-2"
               />
+              <a href="https://www.facebook.com/comscisa/posts/pfbid0JQM28RSqLzS1US46vDZT1wty5siKVaqsf5GDP3W7L7bq5AkhwXpp5Cqb5wVv6ybwl">
               GUBGURU
+            </a>
             </div>
             <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
               <Image
@@ -96,7 +111,9 @@ export default function Home(): JSX.Element {
                 alt="Check Stu"
                 className="w-full mb-2"
               />
+              <a href="http://os.sa.ac.th/comsci/detail.php?pid=86">
               CHECK-STU
+            </a>
             </div>
           </div>
         </div>

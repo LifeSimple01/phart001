@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home(): JSX.Element {
   return (
     <div className="bg-[#987185] font-sans min-h-screen">

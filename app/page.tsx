@@ -64,24 +64,30 @@ export default function Home(): JSX.Element {
           <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">MY PROJECT</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
-              <img
+              <Image
                 src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672e1bef6f3a8.png"
+                width={400}
+                height={400}
                 alt="Sand Block"
                 className="w-full mb-2"
               />
               SAND BLOCK
             </div>
             <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
-              <img
+              <Image
                 src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672e1cfa7f177.png"
+                width={400}
+                height={400}
                 alt="GubGuru"
                 className="w-full mb-2"
               />
               GUBGURU
             </div>
             <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
-              <img
+              <Image
                 src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672e1bf61017d.png"
+                width={400}
+                height={400}
                 alt="Check Stu"
                 className="w-full mb-2"
               />

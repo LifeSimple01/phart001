@@ -9,6 +9,11 @@ export default function Home(): JSX.Element {
           <a href="#">MY WEBSITE</a>
         </div>
         <ul className="flex space-x-6">
+        <li>
+            <a className="text-[#D6AA9F]">
+              CLICK!!!
+            </a>
+          </li>
           <li>
             <a
               href="https://www.facebook.com/satriangthong"

@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'app.sa.ac.th',
+        port: '', 
+        pathname: '/gubguru/pages/registerseller/uploads/**', 
+      },
+    ],
+  },
 };
 
 export default nextConfig;

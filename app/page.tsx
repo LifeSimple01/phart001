@@ -1,100 +1,122 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-[#987185] font-sans min-h-screen">
+      <div className="flex justify-between items-center p-4 bg-[#423736]">
+        <div className="text-[#D6AA9F] font-bold text-lg">
+          <a href="#">MY WEBSITE</a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <ul className="flex space-x-6">
+          <li>
+            <a
+              href="https://www.facebook.com/satriangthong"
+              className="text-[#D6AA9F]"
+            >
+              SATRI-ANGTHONG
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/comscisa"
+              className="text-[#D6AA9F]"
+            >
+              COMSCI-GEN-4
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 bg-[#D6AA9F]">
+        <div className="bg-[#E9D5B7] p-6 rounded-lg">
+          <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">MY PROFILE</h2>
+          <img
+            src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672cdcc33c0e6.png"
+            alt="Profile Picture"
+            className="w-full max-w-[200px] rounded-lg mb-4"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          <p className="text-[#1a1a1a]">
+            <strong>ญาณภัทร จำนงค์สุทธิ์</strong>
+            <br />
+            ม.6/12 เลขที่ 9
+            <br />
+            วิทย์-คอม สตรีอ่างทอง Gen 4
+          </p>
+          <p className="text-[#1a1a1a] mt-2">
+            FB: Yarnnaphart Chamnongsooth
+            <br />
+            IG: life_simple001
+            <br />
+            Line: phart1234
+            <br />
+            Phone: 063-1633783
+          </p>
+        </div>
+        <div className="bg-[#E9D5B7] p-6 rounded-lg">
+          <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">ABOUT ME</h2>
+          <p className="text-[#1a1a1a]">
+            หวัดดีค้าบบบบบบบบ อยู่จนจะจบม.6เเล้วค้าบบบบบบไม่รู้จะเขียนไรดีค้าบบบบบ
+          </p>
+        </div>
+        <div className="bg-[#E9D5B7] p-6 rounded-lg">
+          <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">MY PROJECT</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
+              <img
+                src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672e1bef6f3a8.png"
+                alt="Sand Block"
+                className="w-full mb-2"
+              />
+              SAND BLOCK
+            </div>
+            <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
+              <img
+                src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672e1cfa7f177.png"
+                alt="GubGuru"
+                className="w-full mb-2"
+              />
+              GUBGURU
+            </div>
+            <div className="bg-white border-2 border-gray-800 rounded-lg p-4 text-center text-[#1a1a1a] font-bold">
+              <img
+                src="http://app.sa.ac.th/gubguru/pages/registerseller/uploads/p/672e1bf61017d.png"
+                alt="Check Stu"
+                className="w-full mb-2"
+              />
+              CHECK-STU
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#E9D5B7] p-6 rounded-lg">
+          <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Project Info</h2>
+          <ul className="space-y-4">
+            <li>
+              <p className="font-bold text-[#1a1a1a]">SANDBLOCK:</p>
+              <p className="text-[#1a1a1a]">
+                เป็นเกมส่งเสริมและพัฒนาในด้านความคิดสร้างสรรค์ และ
+                จินตนาการให้กับเด็กๆ โดยเป็นการผสมผสานระหว่าง Block Game ในรูปแบบ Tangram
+                เข้ากับเกมแนว Sandbox
+              </p>
+            </li>
+            <li>
+              <p className="font-bold text-[#1a1a1a]">GUBGURU:</p>
+              <p className="text-[#1a1a1a]">
+                ถูกพัฒนาขึ้นมา
+                เพื่อลดปัญหาการใช้จ่ายไม่เพียงพอในแต่ละครัวเรือนในชุมชน โดยมีรูปแบบเป็นระบบเว็บแอปพลิเคชัน
+                ที่จะช่วยจัดสรรงบประมาณการใช้ จ่ายเงินในการซื้อวัตถุดิบหรือสินค้าในการบริโภคในแต่ละเดือนตามเงื่อนไขที่กำหนด
+              </p>
+            </li>
+            <li>
+              <p className="font-bold text-[#1a1a1a]">CHECK-STU:</p>
+              <p className="text-[#1a1a1a]">
+                เป็นแอพพลิเคชั่นช่วยอำนวยความสะดวกในการตรวจสอบเช็คชื่อนักเรียน
+                ที่มีจุดเด่นที่การใช้ระบบ GPS ในการตรวจสอบวัดระยะห่างระหว่างครูกับนักเรียน
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer className="bg-[#423736] text-[#D6AA9F] p-4 text-center">
+        <p>Coppyright 2024 Made by Yarnnaphart</p>
       </footer>
     </div>
   );
